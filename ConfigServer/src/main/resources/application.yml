@@ -1,0 +1,15 @@
+server:
+  port: 8085
+  
+spring:
+   application:
+     name: CONFIG-SERVER 
+    
+#    to read cofigurations from git URL and 
+#     to used git fetched configurations make other services as configClient      
+   cloud:
+      config:
+         server:
+            git:
+              uri: https://github.com/sudhirsatwekar/microservice-config-server
+              clone-on-start: true
